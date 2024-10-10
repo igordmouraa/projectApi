@@ -17,7 +17,8 @@ module.exports = {
         },
         dialectOptions: {
             ssl: {
-                ca: fs.readFileSync(__dirname + '/DigiCertGlobalRootCA.crt.pem') // Certifique-se de fornecer o caminho correto
+                require: true,
+                rejectUnauthorized: false 
             },
             timezone: 'local',
         },
