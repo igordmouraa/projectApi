@@ -68,4 +68,12 @@ jobs:
           app-name: 'petexpress-api'
           slot-name: 'Production'
           package: .
+
+      - name: 'Run database migrations'
+        run: |
+          npm install
+          npm run migrate
+          
+      - name: Start the API
+        run: npm start
           
