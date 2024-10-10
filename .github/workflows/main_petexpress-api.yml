@@ -73,7 +73,3 @@ jobs:
         run: |
           npm install
           npm run migrate
-          
-      - name: Start the API
-        run: npm start
-          
