@@ -1,3 +1,4 @@
+const fs = require('fs');
 require('dotenv').config();
 
 module.exports = {
@@ -16,7 +17,7 @@ module.exports = {
         },
         dialectOptions: {
             ssl: {
-                ca: fs.readFileSync(__dirname + '/path/to/DigiCertGlobalRootCA.crt.pem') // Certifique-se de fornecer o caminho correto
+                ca: fs.readFileSync(__dirname + '/DigiCertGlobalRootCA.crt.pem') // Certifique-se de fornecer o caminho correto
             },
             timezone: 'local',
         },

@@ -72,4 +72,4 @@ jobs:
       - name: 'Run database migrations'
         run: |
           npm install
-          npm run migrate
+          npm run 
